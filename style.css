@@ -1,0 +1,28 @@
+p {
+    color: red;
+}
+
+h2 {
+    color: green;
+    text-decoration: underline;
+}
+
+.projects {
+    color: pink;
+}
+
+#services {
+    color: blue;
+}
+
+body {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.contact {
+    color: orange;
+}
