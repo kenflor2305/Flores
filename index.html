@@ -6,55 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-    <h1>Alken John Flores</h1>
+    <h1>Alken John</h1>
+
     <header>
         <nav>
-            <span>
-                @kennyo
-            </span>
+            <span>@kenhaler</span>
             <ul>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="services">Services</a></li>
-                <li><a href="contact">Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
-    <main>
 
-        <section id="project">
-            <h2 class="projects">
-                My Project
-            </h2>
-            <p>
-                Personal Porfolio, HTML, Website.
+    <main>
+        <section id="projects">
+            <h2 class="projects">My Projects</h2>
+            <p>Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.
             </p>
         </section>
+
         <section id="services">
-            <h2 id="services">
-                My Services
-            </h2>
-            <p>
-                Websirte, Ai Automation, System.
-            </p>
+            <h2 class="services">My Services</h2>
+            <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
+                Analyst</p>
         </section>
-        <section class="contact">
-            <h2 class="contact">
-                Lets Build Together.
-            </h2>
+
+        <section id="contact">
+            <h2 class="contact">Let's build together!</h2>
             <form action="#">
-                <label for="email">Name</label>
+                <!-- Name -->
+                <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
+                <!-- Email -->
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" required>
+                <input type="email" name="email" id="email" required>
 
+                <!-- Message -->
                 <label for="message">Message</label>
-                <textarea type="message" id="message" row="5" required></textarea>
+                <textarea name="message" id="message" rows="5" required></textarea>
 
+                <!-- Submit -->
                 <button type="submit">Send Message</button>
             </form>
         </section>
