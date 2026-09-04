@@ -71,12 +71,6 @@ form {
         font: size 75px;
         color: red;
     }
-
-    span {
-        color: green;
-        font-size: 15px;
-    }
-
 }
 
 @media(max-width:768px) {
