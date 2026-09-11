@@ -76,3 +76,23 @@ heading.style.backgroundColor = "yellow";
 main[0].style.color = "purple";
 main[1].style.color = "purple";
 main[2].style.color = "purple";
+
+heading.addEventListener("click",function(){
+    heading.style.color="red";
+});
+
+const toggleButton = document.querySelector('#switch');
+const body = document.querySelector('body');
+let isOff = false;
+
+toggleButton.addEventListener("click", function () {
+    isOff = !isOff;
+
+    if (isOff) {
+         body.style.color="black";
+        body.style.backgroundColor="white";
+    } else {
+        body.style.backgroundColor="black";
+         body.style.color="white";
+    }
+});
