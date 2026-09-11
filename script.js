@@ -1,40 +1,78 @@
-console.log("Hello World!");
+console.log("Hello, world.");
+console.log("First Javascript");
 
-const myName = 'Alken Flores';
-let Age = '20';
-const myNumber = 9638233541;
-const myAdress = 'Cadiz City';
+//const is unchangeable
+const myName = "Philip Alexander Juayong",
+    myNumber = 9940369664,
+    myAdress = "Hda Sta Teresa, Brgy. Alicante E.B Magalona";
 
+//let is changeable
+let age = 20;
+
+
+//console.log is display output in the console
 console.log(`Name: ${myName}`);
-console.log(`Age: ${Age}`);
+console.log(`Age: ${age}`);
 console.log(`Number: ${myNumber}`);
-console.log(`Adress: ${myAdress}`);
+console.log(`Address: ${myAdress}`);
 
-//Functions
-function greet(name){
-    return`Goodmorning, ${name}`;
+//Functions is calling a block of code that can be reused
+
+function greet(name) {
+    return `Good Morning, ${name}!`;
+
 }
-console.log(greet(myName));
+//mdas is the order of operations in math, it stands for Multiplication and Division, Addition and Subtraction
+function mdas(num1, num2, operator,) {
+    switch (operator) {
+        case "+":
+            return num1 + num2;
+        case "-":
+            return num1 - num2;
+        case "*":
+            return num1 * num2;
+        case "/":
+            return num1 / num2;
+        default:
+            return "Invalid operator";
 
-function mdas(num1, num2){
-    let multiplacation = num1 * num2;
-    let division = num1 / num2;
-    let addition = num1 + num2;
-    let subtraction = num1 - num2;
 
-    return (`Values: ${num1} and ${num2}. Product: ${multiplacation}, Quotient: ${division}, Sum; ${addition},Diff: ${subtraction}`);
-}
-console.log (mdas(5,3))
-const heading = document.querySelector("h1")
+    }
+}//The output of the function greet is displayed in the console
+console.log(greet("Rene"));
+
+
+//The output of the function mdas is displayed in the console
+console.log("Multiplication:" + mdas(5, 3, "*"));
+console.log("Division:" + mdas(5, 3, "/"));
+console.log("Subtraction:" + mdas(5, 3, "-"));
+console.log("Addition:" + mdas(5, 3, "+"));
+
+//const is used to select the first element that matches the specified in HTML code selector
+const heading = document.querySelector("h1");
+
+
+//The output of the heading is displayed in the console
 console.log(heading);
 
-const contactHeading = document.querySelector("#contact h2")
-console.log(contactHeading);
-const projectHeading= document.querySelector("#services h2")
-console.log(projectHeading);
 
-heading.textContent ="My Portfolio";
-contactHeading.textContent = "Let's build together!"
-projectHeading.textContent = "My Projects";
+//const is used to select all elements that matches the specified in HTML code selector
+const main = document.querySelectorAll("h2");
 
+//the output of the main is displayed in the console
+console.log(main[1]);
+console.log(main[2]);
 
+// The textContent property is used to set or re assign the value.
+heading.textContent = "My Portfolio";
+main[1].textContent = "Let's Connect!";
+main[2].textContent = "Message me!!";
+
+//Changing the color and background color of the heading and main elements using the style property
+heading.style.color = "purple";
+heading.style.backgroundColor = "yellow";
+
+//Changing the color and background color of the heading and main elements using the style property
+main[0].style.color = "purple";
+main[1].style.color = "purple";
+main[2].style.color = "purple";
