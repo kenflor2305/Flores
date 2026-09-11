@@ -25,3 +25,12 @@ function mdas(num1, num2){
     return (`Values: ${num1} and ${num2}. Product: ${multiplacation}, Quotient: ${division}, Sum; ${addition},Diff: ${subtraction}`);
 }
 console.log (mdas(5,3))
+const heading = document.querySelector("h1")
+console.log(heading);
+
+const contactHeading = document.querySelector("#contact h2")
+console.log(contactHeading);
+const projectHeading= document.querySelector("#services h2")
+console.log(projectHeading);
+
+
