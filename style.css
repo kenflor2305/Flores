@@ -3,13 +3,8 @@ body {
 }
 
 #projects {
-<<<<<<< HEAD
     background-color: orange;
-=======
-    background-color: aqua;
->>>>>>> cold-theme
 }
-
 ul {
     list-style: none;
 }
@@ -108,4 +103,7 @@ button {
 
 button:hover {
     background-color: red;
+}
+#contact {
+    background-color: green;
 }
