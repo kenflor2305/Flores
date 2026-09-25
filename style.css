@@ -2,6 +2,10 @@ body {
     text-align: center;
 }
 
+#projects {
+    background-color: orange;
+}
+
 ul {
     list-style: none;
 }
@@ -70,6 +74,7 @@ form {
     h1 {
         font: size 75px;
         color: red;
+
     }
 }
 
